@@ -1,184 +1,283 @@
-.counter {
-  font-size: 16px;
-  padding: 5px 10px;
-  border-radius: 5px;
-  color: var(--accent);
-  background: var(--accent-bg);
-  border: 2px solid transparent;
-  transition: border-color 0.3s;
-  margin-bottom: 24px;
-
-  &:hover {
-    border-color: var(--accent-border);
-  }
-  &:focus-visible {
-    outline: 2px solid var(--accent);
-    outline-offset: 2px;
-  }
-}
-
-.hero {
-  position: relative;
-
-  .base,
-  .framework,
-  .vite {
-    inset-inline: 0;
+/* ==========================================================================
+   1. Haupt-Layout & Container
+   ========================================================================== */
+   .dashboard-container {
+    width: 100%;
+    max-width: 1200px; /* Damit das Dashboard atmen kann */
     margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
   }
-
-  .base {
-    width: 170px;
-    position: relative;
-    z-index: 0;
+  
+  h1 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: var(--text-main);
   }
-
-  .framework,
-  .vite {
-    position: absolute;
-  }
-
-  .framework {
-    z-index: 1;
-    top: 34px;
-    height: 28px;
-    transform: perspective(2000px) rotateZ(300deg) rotateX(44deg) rotateY(39deg)
-      scale(1.4);
-  }
-
-  .vite {
-    z-index: 0;
-    top: 107px;
-    height: 26px;
-    width: auto;
-    transform: perspective(2000px) rotateZ(300deg) rotateX(40deg) rotateY(39deg)
-      scale(0.8);
-  }
-}
-
-#center {
-  display: flex;
-  flex-direction: column;
-  gap: 25px;
-  place-content: center;
-  place-items: center;
-  flex-grow: 1;
-
-  @media (max-width: 1024px) {
-    padding: 32px 20px 24px;
-    gap: 18px;
-  }
-}
-
-#next-steps {
-  display: flex;
-  border-top: 1px solid var(--border);
-  text-align: left;
-
-  & > div {
-    flex: 1 1 0;
-    padding: 32px;
-    @media (max-width: 1024px) {
-      padding: 24px 20px;
-    }
-  }
-
-  .icon {
-    margin-bottom: 16px;
-    width: 22px;
-    height: 22px;
-  }
-
-  @media (max-width: 1024px) {
-    flex-direction: column;
-    text-align: center;
-  }
-}
-
-#docs {
-  border-right: 1px solid var(--border);
-
-  @media (max-width: 1024px) {
-    border-right: none;
-    border-bottom: 1px solid var(--border);
-  }
-}
-
-#next-steps ul {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  gap: 8px;
-  margin: 32px 0 0;
-
-  .logo {
-    height: 18px;
-  }
-
-  a {
-    color: var(--text-h);
-    font-size: 16px;
-    border-radius: 6px;
-    background: var(--social-bg);
-    display: flex;
-    padding: 6px 12px;
-    align-items: center;
-    gap: 8px;
-    text-decoration: none;
-    transition: box-shadow 0.3s;
-
-    &:hover {
-      box-shadow: var(--shadow);
-    }
-    .button-icon {
-      height: 18px;
-      width: 18px;
-    }
-  }
-
-  @media (max-width: 1024px) {
+  
+  /* Globaler Loader */
+  .loader {
     margin-top: 20px;
-    flex-wrap: wrap;
-    justify-content: center;
-
-    li {
-      flex: 1 1 calc(50% - 8px);
-    }
-
-    a {
-      width: 100%;
-      justify-content: center;
-      box-sizing: border-box;
-    }
+    color: #6366f1;
   }
+  
+
+
+/* ==========================================================================
+   2. API Key Management (Optimiertes Dunkel- & Grünschema)
+   ========================================================================== */
+.api-key-container {
+  background-color: #141b2b; /* Gleicher edler Hintergrund wie das Dashboard */
+  padding: 16px;
+  border-radius: 12px;
+  margin-bottom: 30px;
+  border: 1px solid #222f47;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
-#spacer {
-  height: 88px;
-  border-top: 1px solid var(--border);
-  @media (max-width: 1024px) {
-    height: 48px;
-  }
+.api-key-input-group {
+  display: flex;
+  gap: 10px;
 }
 
-.ticks {
-  position: relative;
+/* Das Eingabefeld nutzt jetzt exakt das dunkle Schema des Suchfelds */
+.api-input {
+  flex: 1;
+  background-color: #0f172a;
+  border: 1px solid #334155;
+  border-radius: 6px;
+  padding: 12px 16px;
+  color: #f8fafc;
+  font-family: monospace;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+/* Subtiler Glow bei Klick */
+.api-input:focus {
+  border-color: #6366f1;
+  box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.15);
+}
+
+/* API Buttons */
+.api-btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 13px;
+  transition: background-color 0.2s, transform 0.1s;
+}
+
+.api-btn:active {
+  transform: scale(0.98);
+}
+
+/* Speichern-Button */
+.api-btn.save {
+  background-color: #6366f1;
+  color: #ffffff;
+}
+
+.api-btn.save:hover {
+  background-color: #4f46e5;
+}
+
+/* Löschen / Wechseln Button */
+.api-btn.delete {
+  background-color: #1e293b;
+  border: 1px solid #334155;
+  color: #94a3b8;
+}
+
+.api-btn.delete:hover {
+  background-color: #334155;
+  color: #f8fafc;
+}
+
+/* Status-Gruppe bei aktiver Verbindung */
+.api-key-status-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   width: 100%;
-
-  &::before,
-  &::after {
-    content: '';
-    position: absolute;
-    top: -4.5px;
-    border: 5px solid transparent;
-  }
-
-  &::before {
-    left: 0;
-    border-left-color: var(--border);
-  }
-  &::after {
-    right: 0;
-    border-right-color: var(--border);
-  }
 }
+
+/* Schickes, dezent dunkles Grünschema für die Erfolgsmeldung */
+.api-status-badge.active {
+  color: #34d399; /* Angenehmes Minzgrün */
+  font-weight: 500;
+  font-size: 14px;
+  background-color: rgba(16, 185, 129, 0.1); /* Subtiler dunkelgrüner Hintergrund */
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: 1px solid rgba(16, 185, 129, 0.2);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Warnungs-Box (Bleibt im dunklen Rot-Ton für Fehler/Fehlende Keys) */
+.key-warning-box {
+  background-color: #1a1415;
+  border: 1px solid #7f1d1d;
+  color: #fca5a5;
+  padding: 14px;
+  border-radius: 8px;
+  text-align: center;
+  margin-top: 16px;
+  font-size: 13.5px;
+}
+
+.key-warning-box strong {
+  color: #ef4444;
+}
+  
+  /* ==========================================================================
+     3. Autocomplete Suchfeld & Wrapper
+     ========================================================================== */
+  .autocomplete-wrapper {
+    position: relative;
+    width: 100%;
+    margin-bottom: 24px;
+  }
+  
+  .search-input {
+    width: 100%;
+    background-color: var(--bg-input);
+    color: var(--text-main);
+    border: 1px solid var(--border-color);
+    padding: 12px 16px;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
+    box-sizing: border-box;
+  }
+  
+  .search-input:focus {
+    border-color: var(--accent-color);
+    box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.15);
+  }
+  
+  /* ==========================================================================
+     4. Dropdown Menü (Länderliste)
+     ========================================================================== */
+  .dropdown-list {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-top: none;
+    border-radius: 0 0 6px 6px;
+    margin: 4px 0 0 0;
+    padding: 0;
+    list-style: none;
+    max-height: 200px;
+    overflow-y: auto;
+    z-index: 10;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  }
+  
+  .dropdown-item {
+    padding: 10px 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.2s, color 0.2s;
+  }
+  
+  .dropdown-item:hover {
+    background-color: var(--bg-hover);
+    color: var(--accent-color);
+  }
+  
+  .no-results {
+    padding: 10px 16px;
+    color: var(--text-muted);
+    font-style: italic;
+  }
+  
+  .country-dropdown-name {
+    color: var(--text-main);
+  }
+  
+  /* ==========================================================================
+     5. Auswahl-Anzeige (Ehemals Badge -> Jetzt im homogenen Input-Look)
+     ========================================================================== */
+  .selected-country-badge {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--bg-input); /* Identisch zum Input-Feld für nahtlosen Übergang */
+    border: 1px solid var(--border-color);
+    padding: 11px 16px;
+    border-radius: 6px;
+    color: #ffffff;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .badge-info {
+    display: flex;
+    align-items: center; 
+    gap: 8px;
+  }
+  
+  .country-code {
+    color: #64748b;
+    font-family: monospace;
+    font-size: 0.9rem;
+  }
+  
+  .country-title {
+    font-weight: 500;
+    color: #f8fafc;
+  }
+  
+  .country-money {
+    margin-left: 8px;
+    font-size: 12px;
+    color: #10b981; /* Hübscher grüner Kontrast für die Kasse */
+    background: rgba(16, 185, 129, 0.1);
+    padding: 2px 6px;
+    border-radius: 4px;
+  }
+  
+  .reset-button {
+    background: none;
+    border: none;
+    color: #64748b;
+    cursor: pointer;
+    font-size: 16px;
+    transition: color 0.2s;
+    padding: 0 4px;
+  }
+  
+  .reset-button:hover {
+    color: #ef4444;
+  }
+  
+  /* ==========================================================================
+     6. Flaggen & Icons
+     ========================================================================== */
+  /* Gemeinsame Flaggen-Basis (Dropdown + Badge) */
+  .country-flag-icon {
+    width: 24px;
+    height: auto;             /* Behebt die Verzerrung ungleichmäßiger Flaggen wie Nepal */
+    border-radius: 2px;
+    margin-right: 12px;       /* Abstand zum Text im Dropdown */
+    object-fit: contain;      /* Schützt das originale Seitenverhältnis */
+    flex-shrink: 0;
+    display: block;
+  }
+  
+  /* Feineinstellung für die Flagge direkt im ausgewählten Such-Badge */
+  .country-flag-icon.selection-badge-flag {
+    margin-right: 8px;        /* Kompakterer Abstand zum [KÜRZEL] */
+    transform: translateY(0px);
+  }

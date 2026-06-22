@@ -1,0 +1,303 @@
+{
+  "result": {
+    "data": {
+      "dates": {
+        "lastConnectionAt": "2026-06-10T19:14:21.230Z",
+        "lastNotificationsCheckAt": "2026-05-27T08:33:18.701Z",
+        "lastCountryMessageCheckAt": "2026-05-27T08:33:18.701Z",
+        "lastGlobalMessageCheckAt": "2026-05-27T08:33:18.701Z",
+        "lastEventsCheckAt": "2026-05-27T08:33:18.701Z",
+        "lastWorkOfferApplications": [
+          "2026-06-05T09:10:40.619Z",
+          "2026-06-06T07:17:07.362Z",
+          "2026-06-06T07:18:53.582Z"
+        ],
+        "lastHiresAt": [],
+        "lastWorkAt": "2026-06-10T19:15:17.741Z",
+        "lastCompanyJoinedAt": "2026-06-06T07:18:53.580Z",
+        "lastDailyRewardClaimedAt": "2026-06-10T04:42:08.926Z",
+        "lastSkillsResetAt": "2026-05-28T07:11:31.603Z",
+        "lastHelpAskedAt": "2026-06-10T16:44:13.944Z"
+      },
+      "infos": {
+        "isPremium": true,
+        "premiumMonthsCount": 1,
+        "colorScheme": "amber",
+        "description": "Aufs Profil gefettfingert"
+      },
+      "missions": {
+        "claimedAt": {
+          "starting": "2026-05-28T07:09:01.228Z",
+          "weekly": "2026-06-10T06:03:50.613Z",
+          "daily": "2026-06-10T06:09:05.106Z"
+        },
+        "rerolledDailyMissions": 2,
+        "rerolledWeeklyMissions": 0
+      },
+      "leveling": {
+        "level": 14,
+        "totalXp": 5940,
+        "dailyXpLeft": 100,
+        "availableSkillPoints": 4,
+        "spentSkillPoints": 52,
+        "totalSkillPoints": 56,
+        "freeReset": 1
+      },
+      "preferences": {
+        "autoReplaceOnBreak": true,
+        "autoEquipMode": "worst",
+        "appFont": "Saira",
+        "appPattern": "none",
+        "locale": "en",
+        "sfx": false
+      },
+      "_id": "6a16ac4ebe35a9b3e086a9e8",
+      "username": "Butterkatze",
+      "usernameLower": "butterkatze",
+      "canOnboard": false,
+      "country": "6813b6d446e731854c7ac79c",
+      "availableColorSchemes": [],
+      "shouldUpdateProfile": true,
+      "isActive": true,
+      "skills": {
+        "energy": {
+          "level": 5,
+          "currentBarValue": 6,
+          "value": 80,
+          "weapon": null,
+          "equipment": null,
+          "overflow": null,
+          "limited": null,
+          "total": 80,
+          "totalAfterSoftCap": null,
+          "hourlyBarRegen": 8
+        },
+        "health": {
+          "level": 0,
+          "currentBarValue": 7.999999999999957,
+          "value": 100,
+          "weapon": null,
+          "equipment": null,
+          "overflow": null,
+          "limited": null,
+          "total": 100,
+          "totalAfterSoftCap": null,
+          "hourlyBarRegen": 10
+        },
+        "hunger": {
+          "level": 0,
+          "currentBarValue": 4,
+          "value": 4,
+          "weapon": null,
+          "equipment": null,
+          "overflow": null,
+          "limited": null,
+          "total": 4,
+          "totalAfterSoftCap": null,
+          "hourlyBarRegen": 0.4
+        },
+        "attack": {
+          "level": 0,
+          "ammoPercent": 0,
+          "buffsPercent": 0,
+          "debuffsPercent": 0,
+          "militaryRankPercent": 7.5,
+          "value": 100,
+          "weapon": 37,
+          "equipment": null,
+          "overflow": null,
+          "limited": null,
+          "total": 147,
+          "totalAfterSoftCap": null
+        },
+        "companies": {
+          "level": 3,
+          "value": 5,
+          "weapon": null,
+          "equipment": null,
+          "overflow": null,
+          "limited": null,
+          "total": 5,
+          "totalAfterSoftCap": null
+        },
+        "entrepreneurship": {
+          "level": 4,
+          "currentBarValue": 0,
+          "value": 50,
+          "weapon": null,
+          "equipment": null,
+          "overflow": null,
+          "limited": null,
+          "total": 50,
+          "totalAfterSoftCap": null,
+          "hourlyBarRegen": 5
+        },
+        "production": {
+          "level": 6,
+          "currentBarValue": 10,
+          "value": 28,
+          "weapon": null,
+          "equipment": null,
+          "overflow": null,
+          "limited": null,
+          "total": 28,
+          "totalAfterSoftCap": null,
+          "hourlyBarRegen": 2.8
+        },
+        "criticalChance": {
+          "level": 0,
+          "value": 10,
+          "weapon": 5,
+          "equipment": null,
+          "overflow": null,
+          "limited": null,
+          "total": 15,
+          "totalAfterSoftCap": null
+        },
+        "criticalDamages": {
+          "level": 0,
+          "value": 100,
+          "weapon": null,
+          "equipment": 3,
+          "overflow": null,
+          "limited": null,
+          "total": 103,
+          "totalAfterSoftCap": null
+        },
+        "armor": {
+          "level": 0,
+          "value": null,
+          "weapon": null,
+          "equipment": 9,
+          "overflow": null,
+          "limited": null,
+          "total": 9,
+          "totalAfterSoftCap": 18
+        },
+        "precision": {
+          "level": 0,
+          "value": 50,
+          "weapon": null,
+          "equipment": 2,
+          "overflow": null,
+          "limited": null,
+          "total": 52,
+          "totalAfterSoftCap": null
+        },
+        "dodge": {
+          "level": 0,
+          "value": null,
+          "weapon": null,
+          "equipment": 4,
+          "overflow": null,
+          "limited": null,
+          "total": 4,
+          "totalAfterSoftCap": 9
+        },
+        "lootChance": {
+          "level": 0,
+          "value": 5,
+          "weapon": null,
+          "equipment": null,
+          "overflow": null,
+          "limited": null,
+          "total": 5,
+          "totalAfterSoftCap": null
+        },
+        "management": {
+          "level": 0,
+          "value": 4,
+          "weapon": null,
+          "equipment": null,
+          "overflow": null,
+          "limited": null,
+          "total": 4,
+          "totalAfterSoftCap": null
+        }
+      },
+      "emailVerified": false,
+      "militaryRank": 25,
+      "muMaxLevelRewarded": 0,
+      "createdAt": "2026-05-27T08:33:18.702Z",
+      "updatedAt": "2026-06-10T19:15:17.741Z",
+      "__v": 0,
+      "stats": {
+        "worksCount": 414,
+        "case1": {
+          "byRarity": {
+            "common": 38,
+            "uncommon": 24,
+            "rare": 7
+          },
+          "openedCount": 69
+        },
+        "damagesCount": 86495,
+        "wealth": {
+          "companies": 2350.028,
+          "items": 48.679,
+          "money": 93.65,
+          "equipments": 75.261,
+          "weapons": 32.643,
+          "total": 2600.26
+        }
+      },
+      "finishedTours": {
+        "onboarding": true
+      },
+      "equipment": {
+        "gloves": "6a2659fc127031914e1a3f87",
+        "boots": "6a281e2de6f492db4a198755",
+        "weapon": "6a217c665d9e04a34f9a292f",
+        "helmet": "6a252c90928df3a595abd597",
+        "pants": "6a231296da27e51b7e5c1b2c",
+        "chest": "6a27b7ebe6f492db4adec29b"
+      },
+      "rankings": {
+        "userDamages": {
+          "value": 86404,
+          "rank": 12284,
+          "tier": "bronze"
+        },
+        "weeklyUserDamages": {
+          "value": 19694,
+          "rank": 8473,
+          "tier": "bronze"
+        },
+        "userWealth": {
+          "value": 2600.26,
+          "rank": 11181,
+          "tier": "bronze"
+        },
+        "userLevel": {
+          "value": 5910,
+          "rank": 11659,
+          "tier": "bronze"
+        },
+        "userReferrals": {
+          "value": 0,
+          "rank": 2098,
+          "tier": "platinum"
+        },
+        "userPremiumMonths": {
+          "value": 1,
+          "rank": 2103,
+          "tier": "silver"
+        },
+        "userCasesOpened": {
+          "value": 69,
+          "rank": 11353,
+          "tier": "bronze"
+        },
+        "userBounty": {
+          "value": 0.50568,
+          "rank": 12768,
+          "tier": "bronze"
+        }
+      },
+      "avatarUrl": "https://media.warera.io/avatars/6a16ac4ebe35a9b3e086a9e8-1779881379086-39zep6vp.png",
+      "party": "698cfa6003daee7f6b14aab9",
+      "mu": "69f1b7af71d57a8f81911ce6",
+      "company": "6997f644d957fdf71509b240"
+    }
+  }
+}

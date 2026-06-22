@@ -1,0 +1,386 @@
+{
+  "result": {
+    "data": {
+      "dates": {
+        "lastConnectionAt": "2026-06-10T20:18:36.283Z",
+        "lastNotificationsCheckAt": "2026-01-26T16:22:46.141Z",
+        "lastCountryMessageCheckAt": "2026-01-26T16:22:46.141Z",
+        "lastGlobalMessageCheckAt": "2026-01-26T16:22:46.141Z",
+        "lastEventsCheckAt": "2026-01-26T16:22:46.141Z",
+        "lastWorkOfferApplications": [
+          "2026-05-20T17:16:04.943Z",
+          "2026-05-30T23:52:35.809Z",
+          "2026-06-01T15:52:56.966Z"
+        ],
+        "lastHiresAt": [
+          "2026-01-27T14:13:31.533Z",
+          "2026-01-27T14:15:04.372Z",
+          "2026-01-27T20:49:20.216Z",
+          "2026-02-01T12:07:43.298Z",
+          "2026-02-01T14:58:36.396Z",
+          "2026-02-01T14:59:28.060Z",
+          "2026-02-01T15:59:47.629Z",
+          "2026-02-01T16:57:37.922Z",
+          "2026-02-01T16:59:24.550Z",
+          "2026-02-04T06:37:11.956Z",
+          "2026-02-04T08:24:43.604Z",
+          "2026-02-04T09:13:38.226Z",
+          "2026-02-04T09:14:38.670Z",
+          "2026-02-13T12:23:39.647Z",
+          "2026-02-13T12:25:58.130Z",
+          "2026-02-13T12:31:55.004Z",
+          "2026-02-13T12:32:10.440Z",
+          "2026-02-13T12:36:51.396Z",
+          "2026-02-13T12:39:59.762Z",
+          "2026-02-16T06:23:50.534Z",
+          "2026-02-16T06:46:24.664Z",
+          "2026-02-16T06:46:35.326Z",
+          "2026-02-19T16:04:40.715Z",
+          "2026-02-19T21:01:06.074Z",
+          "2026-02-21T01:38:39.721Z",
+          "2026-02-21T07:06:50.234Z",
+          "2026-02-22T21:56:16.423Z",
+          "2026-02-23T00:15:01.755Z",
+          "2026-02-23T02:02:48.445Z",
+          "2026-02-24T01:27:25.957Z",
+          "2026-03-01T16:56:53.477Z",
+          "2026-03-01T20:07:53.690Z",
+          "2026-03-08T02:18:53.337Z",
+          "2026-03-10T19:54:12.259Z",
+          "2026-03-10T19:55:55.490Z",
+          "2026-03-10T19:58:13.938Z",
+          "2026-03-12T17:08:23.082Z",
+          "2026-03-13T04:42:50.277Z",
+          "2026-03-13T06:50:12.418Z",
+          "2026-03-14T12:43:19.776Z",
+          "2026-03-24T00:33:38.929Z",
+          "2026-04-25T20:19:29.131Z",
+          "2026-05-02T12:38:43.204Z",
+          "2026-05-06T23:08:15.633Z",
+          "2026-05-06T23:12:13.188Z",
+          "2026-05-18T15:00:20.774Z",
+          "2026-05-18T15:33:11.032Z",
+          "2026-06-01T03:22:39.637Z",
+          "2026-06-01T03:24:12.544Z",
+          "2026-06-09T18:54:05.526Z"
+        ],
+        "lastWorkAt": "2026-06-10T20:05:09.593Z",
+        "lastCompanyJoinedAt": "2026-06-01T15:52:56.964Z",
+        "lastDailyRewardClaimedAt": "2026-06-10T00:46:55.096Z",
+        "lastHelpAskedAt": "2026-06-10T14:10:33.984Z",
+        "lastSkillsResetAt": "2026-06-10T09:03:17.864Z",
+        "lastSeenGovernmentAnnouncementAt": "2026-06-10T20:19:06.119Z"
+      },
+      "warning": {
+        "message": "Abusing the report system will lead to a ban",
+        "isAccepted": true
+      },
+      "infos": {
+        "isPremium": true,
+        "premiumMonthsCount": 2,
+        "colorScheme": "deepOrange",
+        "font": "Texturina",
+        "description": "Erster  lizenzierter Gorillapeitscher™"
+      },
+      "missions": {
+        "claimedAt": {
+          "starting": "2026-01-28T00:49:38.555Z",
+          "weekly": "2026-06-08T09:37:52.683Z",
+          "daily": "2026-06-10T12:17:23.225Z"
+        },
+        "rerolledDailyMissions": 1,
+        "rerolledWeeklyMissions": 2
+      },
+      "leveling": {
+        "level": 33,
+        "totalXp": 40160,
+        "dailyXpLeft": 100,
+        "availableSkillPoints": 0,
+        "spentSkillPoints": 132,
+        "totalSkillPoints": 132,
+        "freeReset": 0
+      },
+      "preferences": {
+        "autoReplaceOnBreak": true,
+        "appFont": "Saira",
+        "appPattern": "none",
+        "locale": "en",
+        "sfx": true,
+        "autoEquipMode": "best"
+      },
+      "_id": "697794d6ff5d61eecdb7637c",
+      "username": "Gorillapeitscher",
+      "usernameLower": "gorillapeitscher",
+      "canOnboard": false,
+      "orgs": [],
+      "country": "6813b6d446e731854c7ac79c",
+      "availableColorSchemes": [],
+      "shouldUpdateProfile": true,
+      "isActive": true,
+      "skills": {
+        "energy": {
+          "level": 0,
+          "currentBarValue": 3,
+          "value": 30,
+          "weapon": null,
+          "equipment": null,
+          "overflow": null,
+          "limited": null,
+          "total": 30,
+          "totalAfterSoftCap": null,
+          "hourlyBarRegen": 3
+        },
+        "health": {
+          "level": 4,
+          "currentBarValue": 0.8000000000001233,
+          "value": 140,
+          "weapon": null,
+          "equipment": null,
+          "overflow": null,
+          "limited": null,
+          "total": 140,
+          "totalAfterSoftCap": null,
+          "hourlyBarRegen": 14
+        },
+        "hunger": {
+          "level": 3,
+          "currentBarValue": 0.7000000000000006,
+          "value": 7,
+          "weapon": null,
+          "equipment": null,
+          "overflow": null,
+          "limited": null,
+          "total": 7,
+          "totalAfterSoftCap": null,
+          "hourlyBarRegen": 0.7
+        },
+        "attack": {
+          "level": 6,
+          "ammoPercent": 10,
+          "buffsPercent": 0,
+          "debuffsPercent": 60,
+          "militaryRankPercent": 25.25,
+          "value": 250,
+          "weapon": 85,
+          "equipment": null,
+          "overflow": null,
+          "limited": null,
+          "total": 185,
+          "totalAfterSoftCap": null
+        },
+        "companies": {
+          "level": 5,
+          "value": 7,
+          "weapon": null,
+          "equipment": null,
+          "overflow": null,
+          "limited": null,
+          "total": 7,
+          "totalAfterSoftCap": null
+        },
+        "entrepreneurship": {
+          "level": 0,
+          "currentBarValue": 3,
+          "value": 30,
+          "weapon": null,
+          "equipment": null,
+          "overflow": null,
+          "limited": null,
+          "total": 30,
+          "totalAfterSoftCap": null,
+          "hourlyBarRegen": 3
+        },
+        "production": {
+          "level": 0,
+          "currentBarValue": 10,
+          "value": 10,
+          "weapon": null,
+          "equipment": null,
+          "overflow": null,
+          "limited": null,
+          "total": 10,
+          "totalAfterSoftCap": null,
+          "hourlyBarRegen": 1
+        },
+        "criticalChance": {
+          "level": 5,
+          "value": 35,
+          "weapon": 14,
+          "equipment": null,
+          "overflow": null,
+          "limited": null,
+          "total": 49,
+          "totalAfterSoftCap": null
+        },
+        "criticalDamages": {
+          "level": 4,
+          "value": 180,
+          "weapon": null,
+          "equipment": 44,
+          "overflow": null,
+          "limited": null,
+          "total": 224,
+          "totalAfterSoftCap": null
+        },
+        "armor": {
+          "level": 4,
+          "value": 24,
+          "weapon": null,
+          "equipment": 28,
+          "overflow": null,
+          "limited": null,
+          "total": 52,
+          "totalAfterSoftCap": 57
+        },
+        "precision": {
+          "level": 5,
+          "value": 75,
+          "weapon": null,
+          "equipment": 15,
+          "overflow": null,
+          "limited": null,
+          "total": 90,
+          "totalAfterSoftCap": null
+        },
+        "dodge": {
+          "level": 5,
+          "value": 20,
+          "weapon": null,
+          "equipment": 15,
+          "overflow": null,
+          "limited": null,
+          "total": 35,
+          "totalAfterSoftCap": 47
+        },
+        "lootChance": {
+          "level": 5,
+          "value": 15,
+          "weapon": null,
+          "equipment": null,
+          "overflow": null,
+          "limited": null,
+          "total": 15,
+          "totalAfterSoftCap": null
+        },
+        "management": {
+          "level": 0,
+          "value": 4,
+          "weapon": null,
+          "equipment": null,
+          "overflow": null,
+          "limited": null,
+          "total": 4,
+          "totalAfterSoftCap": null
+        }
+      },
+      "emailVerified": true,
+      "militaryRank": 82,
+      "createdAt": "2026-01-26T16:22:46.142Z",
+      "updatedAt": "2026-06-10T20:21:33.501Z",
+      "__v": 0,
+      "finishedTours": {
+        "onboarding": true
+      },
+      "stats": {
+        "worksCount": 3475,
+        "damagesCount": 29609608,
+        "estimatedCompanyValues": 5970.504,
+        "estimatedInventoryValue": 665.895,
+        "estimatedWealth": 8465.783,
+        "wealth": {
+          "companies": 14781.01,
+          "items": 1485.391,
+          "money": 231.664,
+          "equipments": 2186.002,
+          "weapons": 1094.372,
+          "total": 19778.437
+        },
+        "case1": {
+          "byRarity": {
+            "common": 1106,
+            "epic": 14,
+            "rare": 122,
+            "uncommon": 500,
+            "legendary": 1
+          },
+          "openedCount": 1743
+        },
+        "case2": {
+          "byRarity": {
+            "uncommon": 4,
+            "epic": 2,
+            "rare": 1
+          },
+          "openedCount": 7
+        }
+      },
+      "avatarUrl": "https://media.warera.io/avatars/697794d6ff5d61eecdb7637c-1780791942553-xe9rgi1a.jpg",
+      "equipment": {
+        "weapon": "6a212e495d9e04a34f6c2c32",
+        "ammo": "lightAmmo",
+        "helmet": "6a1cf1a223cdacc0d885c7d5",
+        "chest": "6a13939a5d9e4ee8de853f89",
+        "gloves": "6a1b3f6d68509d1532caf4ec",
+        "pants": "6a228cce442dc6411635015f",
+        "boots": "6a221b1602f3c102df268eda"
+      },
+      "rankings": {
+        "userDamages": {
+          "value": 29594814,
+          "rank": 806,
+          "tier": "platinum"
+        },
+        "weeklyUserDamages": {
+          "value": 854414,
+          "rank": 1041,
+          "tier": "platinum"
+        },
+        "userWealth": {
+          "value": 19778.437,
+          "rank": 2234,
+          "tier": "platinum"
+        },
+        "userLevel": {
+          "value": 40150,
+          "rank": 1707,
+          "tier": "platinum"
+        },
+        "userReferrals": {
+          "value": 0,
+          "rank": 2099,
+          "tier": "platinum"
+        },
+        "userPremiumMonths": {
+          "value": 2,
+          "rank": 1261,
+          "tier": "gold"
+        },
+        "userCasesOpened": {
+          "value": 1750,
+          "rank": 1030,
+          "tier": "platinum"
+        },
+        "userBounty": {
+          "value": 779.5138479999981,
+          "rank": 1347,
+          "tier": "platinum"
+        }
+      },
+      "muMaxLevelRewarded": 0,
+      "mu": "69e7361fe64f9fd7290ea13f",
+      "equippedSkinKeys": {
+        "tank": "hamsterTank",
+        "helmet": "birthday1YearBetaHelmet",
+        "rifle": "1kSubRifle"
+      },
+      "party": "69ac54ef5f0eac1a1ef089d1",
+      "company": "69eed15fc4966e7e153678b0",
+      "buffs": {
+        "debuffCodes": [
+          "cocain"
+        ],
+        "debuffEndAt": "2026-06-11T12:07:07.419Z"
+      }
+    }
+  }
+}
