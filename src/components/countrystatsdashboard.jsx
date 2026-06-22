@@ -1,4 +1,4 @@
-import './CountryStatsDashboard.css';
+import './countrystatsdashboard.css';
 
 // Konstante für die Timer-Planung (90%)
 const DEBUFF_TARGET_PERCENTILE = 0.9;
