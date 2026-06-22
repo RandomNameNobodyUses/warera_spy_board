@@ -1,122 +1,188 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
-import './App.css'
+import { useState, useEffect, useRef } from 'react';
+import { DataHandler } from './components/datahandler.js';
+import CountryStatsDashboard from './components/countrystatsdashboard.jsx'; // Das neue Dashboard laden
+import './index.css';
+import './App.css';
+
+const dataHandler = new DataHandler();
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [countries, setCountries] = useState([]);
+  const [searchQuery, setSearchQuery] = useState('');
+  const [isOpen, setIsOpen] = useState(false);
+  const [selectedCountry, setSelectedCountry] = useState(null);
+  
+  const [countryStats, setCountryStats] = useState(null);
+  const [statsLoading, setStatsLoading] = useState(false);
+
+  const [apiKey, setApiKey] = useState(dataHandler.apiKey);
+  const [apiKeyInput, setApiKeyInput] = useState(dataHandler.apiKey);
+  const [isKeySaved, setIsKeySaved] = useState(!!dataHandler.apiKey);
+  
+  const wrapperRef = useRef(null);
+
+  useEffect(() => {
+    if (apiKey) {
+      dataHandler.getAllCountries()
+        .then(data => setCountries(data))
+        .catch(err => console.error("Fehler beim Länder-Load:", err));
+    } 
+  }, [apiKey]);
+
+  useEffect(() => {
+    function handleClickOutside(event) {
+      if (wrapperRef.current && !wrapperRef.current.contains(event.target)) {
+        setIsOpen(false);
+      }
+    }
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => document.removeEventListener('mousedown', handleClickOutside);
+  }, []);
+
+  const handleSaveKey = () => {
+    if (!apiKeyInput.trim()) return;
+    dataHandler.saveApiKey(apiKeyInput);
+    setApiKey(dataHandler.apiKey);
+    setIsKeySaved(true);
+  };
+
+  const handleClearKey = () => {
+    dataHandler.clearApiKey();
+    setApiKey('');
+    setApiKeyInput('');
+    setIsKeySaved(false);
+    handleResetSelection();
+  };
+
+  const filteredCountries = countries.filter(country =>
+    country.name.toLowerCase().includes(searchQuery.toLowerCase())
+  );
+
+  const handleSelectCountry = async (country) => {
+    setSelectedCountry(country);
+    setSearchQuery('');
+    setIsOpen(false);
+    
+    setStatsLoading(true);
+    setCountryStats(null);
+    
+    try {
+      const stats = await dataHandler.getAggregatedStats(country._id);
+      setCountryStats(stats);
+    } catch (error) {
+      console.error("Fehler beim Abrufen der Statistiken:", error);
+    } finally {
+      setStatsLoading(false);
+    }
+  };
+
+  const handleResetSelection = () => {
+    setSelectedCountry(null);
+    setCountryStats(null);
+    setSearchQuery('');
+  };
 
   return (
-    <>
-      <section id="center">
-        <div className="hero">
-          <img src={heroImg} className="base" width="170" height="179" alt="" />
-          <img src={reactLogo} className="framework" alt="React logo" />
-          <img src={viteLogo} className="vite" alt="Vite logo" />
-        </div>
-        <div>
-          <h1>Get started</h1>
-          <p>
-            Edit <code>src/App.jsx</code> and save to test <code>HMR</code>
-          </p>
-        </div>
-        <button
-          type="button"
-          className="counter"
-          onClick={() => setCount((count) => count + 1)}
-        >
-          Count is {count}
-        </button>
-      </section>
+    <div className="dashboard-container">
+      {/* API KEY MANAGER */}
+      <div className="api-key-container">
+        {!isKeySaved ? (
+          <div className="api-key-input-group">
+            <input
+              type="password"
+              className="api-input"
+              placeholder="WarEra API-Key hier einfügen..."
+              value={apiKeyInput}
+              onChange={(e) => setApiKeyInput(e.target.value)}
+            />
+            <button className="api-btn save" onClick={handleSaveKey}>Schlüssel Speichern</button>
+          </div>
+        ) : (
+          <div className="api-key-status-group">
+            <span className="api-status-badge active">✓ API-Verbindung aktiv</span>
+            <button className="api-btn delete" onClick={handleClearKey}>Schlüssel wechseln</button>
+          </div>
+        )}
+      </div>
 
-      <div className="ticks"></div>
+      <h1>Landesstatistiken</h1>
 
-      <section id="next-steps">
-        <div id="docs">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#documentation-icon"></use>
-          </svg>
-          <h2>Documentation</h2>
-          <p>Your questions, answered</p>
-          <ul>
-            <li>
-              <a href="https://vite.dev/" target="_blank">
-                <img className="logo" src={viteLogo} alt="" />
-                Explore Vite
-              </a>
-            </li>
-            <li>
-              <a href="https://react.dev/" target="_blank">
-                <img className="button-icon" src={reactLogo} alt="" />
-                Learn more
-              </a>
-            </li>
-          </ul>
+      {!apiKey ? (
+        <div className="key-warning-box">
+          <p>Bitte hinterlege oben einen gültigen <strong>WarEra API-Key</strong>, um Daten abzufragen.</p>
         </div>
-        <div id="social">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#social-icon"></use>
-          </svg>
-          <h2>Connect with us</h2>
-          <p>Join the Vite community</p>
-          <ul>
-            <li>
-              <a href="https://github.com/vitejs/vite" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#github-icon"></use>
-                </svg>
-                GitHub
-              </a>
-            </li>
-            <li>
-              <a href="https://chat.vite.dev/" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#discord-icon"></use>
-                </svg>
-                Discord
-              </a>
-            </li>
-            <li>
-              <a href="https://x.com/vite_js" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#x-icon"></use>
-                </svg>
-                X.com
-              </a>
-            </li>
-            <li>
-              <a href="https://bsky.app/profile/vite.dev" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#bluesky-icon"></use>
-                </svg>
-                Bluesky
-              </a>
-            </li>
-          </ul>
-        </div>
-      </section>
+      ) : (
+        <>
+          {/* Autocomplete Wrapper */}
+          <div className="autocomplete-wrapper" ref={wrapperRef}>
+            {!selectedCountry ? (
+              <input
+                type="text"
+                className="search-input"
+                placeholder="Nach Land suchen..."
+                value={searchQuery}
+                onChange={(e) => {
+                  setSearchQuery(e.target.value);
+                  setIsOpen(true);
+                }}
+                onFocus={() => setIsOpen(true)}
+              />
+            ) : (
+              <div className="selected-country-badge">
+                <div className="badge-info">
+                  {/* Lokale SVG-Flagge für das ausgewählte Land geladen */}
+                  {selectedCountry.code && (
+                    <img 
+                      src={`/src/components/flags/${selectedCountry.code.toLowerCase()}.svg`} 
+                      alt="" 
+                      className="country-flag-icon selection-badge-flag"
+                      onError={(e) => e.target.style.display = 'none'}
+                    />
+                  )}
+                  <strong className="country-title">{selectedCountry.name}</strong> 
+                </div>
+                <button onClick={handleResetSelection} className="reset-button" title="Auswahl aufheben">✖</button>
+              </div>
+            )}
 
-      <div className="ticks"></div>
-      <section id="spacer"></section>
-    </>
-  )
+            {isOpen && !selectedCountry && (
+              <ul className="dropdown-list">
+                {filteredCountries.length > 0 ? (
+                  filteredCountries.map((country) => {
+                    const flagCodeLower = country.code?.toLowerCase();
+
+                    return (
+                      <li key={country._id} className="dropdown-item" onClick={() => handleSelectCountry(country)}>
+                        {/* Lokale SVG-Flagge für die Dropdown-Liste geladen */}
+                        {flagCodeLower && (
+                          <img 
+                            src={`/src/components/flags/${flagCodeLower}.svg`} 
+                            alt={`${country.name} Flag`} 
+                            className="country-flag-icon"
+                            onError={(e) => e.target.style.display = 'none'}
+                          />
+                        )}
+                        <span className="country-dropdown-name">{country.name}</span>
+                      </li>
+                    );
+                  })
+                ) : (
+                  <li className="no-results">Kein Land gefunden</li>
+                )}
+              </ul>
+            )}
+          </div>
+          {/* Ladezustand */}
+          {statsLoading && (
+            <div className="loader">Analysiere Profile für {selectedCountry?.name}...</div>
+          )}
+
+          {/* Das ausgelagerte Statistik-Dashboard aufrufen */}
+          <CountryStatsDashboard countryStats={countryStats} />
+        </>
+      )}
+    </div>
+  );
 }
 
-export default App
+export default App;

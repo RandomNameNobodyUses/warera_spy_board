@@ -1,0 +1,293 @@
+/* ==========================================================================
+   1. Dashboard Grundgerüst & Header
+   ========================================================================== */
+   .stats-dashboard {
+    margin-top: 24px;
+    text-align: left;
+    background-color: #141b2b; /* Edlerer, dunklerer Kontrast für das Panel */
+    border: 1px solid #222f47;
+    padding: 24px;
+    border-radius: 12px;       /* Modernere, weichere Ecken */
+    color: #f8fafc;
+    width: 100%;
+    box-sizing: border-box;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+  }
+  
+  .stats-title-wrapper {
+    display: flex;
+    align-items: center;      /* Zentriert Flagge und Text vertikal perfekt */
+    gap: 12px;                /* Abstand zwischen Flagge und Text */
+    margin-bottom: 5px;
+    width: 100%;
+  }
+  
+  .stats-dashboard h2 {
+    margin: 0;
+    font-size: 1.4rem;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+  }
+  
+  /* Große Flagge neben dem Dashboard-Titel bändigen */
+  .dashboard-heading-flag {
+    width: 32px;              /* Feste Breite für einheitliche Ausgangslage */
+    height: auto;             /* FIX FÜR NEPAL: Behält das originale Seitenverhältnis */
+    object-fit: contain;      /* Verhindert jegliche Verzerrung oder Stauchung */
+    border-radius: 3px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+    flex-shrink: 0;
+    display: block;
+    align-self: center;       /* Optische Mitte zur Headline */
+    transform: translateY(-1px);
+  }
+  
+  .divider {
+    border: 0;
+    border-top: 1px solid #222f47;
+    margin-top: 15px;
+    margin-bottom: 24px;
+  }
+  
+  /* ==========================================================================
+     2. Festes 3-Spalten-Grid (Zusammenfassungs-Boxen)
+     ========================================================================== */
+  .division-stats-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Erzwingt IMMER exakt 3 gleich breite Spalten */
+    gap: 12px;
+    margin-bottom: 28px;
+    width: 100%;
+  }
+  
+  .division-stat-box {
+    background-color: #0b111e; /* Minimal dunkler als der Dashboard-Hintergrund */
+    border: 1px solid #1e293b;
+    padding: 14px 10px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    transition: border-color 0.2s, background-color 0.2s;
+  }
+  
+  .division-stat-box:hover {
+    border-color: #2e3f5a;
+  }
+  
+  /* Highlight-Box (90% Ready Um) */
+  .division-stat-box.stat-highlight {
+    border-color: #b45309;      /* Edleres Gold/Orange statt grellem Gelb */
+    background-color: #1c1917;  /* Passender warmer, dunkler Grundton */
+  }
+  
+  .division-stat-label {
+    font-size: 11px;
+    color: #64748b;
+    margin-bottom: 6px;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    font-weight: 500;
+  }
+  
+  .division-stat-value {
+    font-size: 15px;
+    font-weight: 600;
+    color: #f8fafc;
+  }
+  
+  .stat-highlight .division-stat-value {
+    color: #f59e0b;
+  }
+  
+  /* ==========================================================================
+     3. Layout & Container für Diagramme
+     ========================================================================== */
+  .division-expanded-details-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  /* Diagramm Wrapper & Header */
+  .division-chart-container {
+    background-color: #0b111e;
+    padding: 18px;
+    border-radius: 8px;
+    border: 1px solid #1e293b;
+    box-sizing: border-box;
+    width: 100%;
+  }
+  
+  .chart-header-with-info {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 15px;
+  }
+  
+  .chart-title {
+    font-size: 13px;
+    font-weight: 500;
+    color: #94a3b8;
+    margin: 0;
+  }
+  
+  .chart-info-icon {
+    font-size: 12px;
+    color: #475569;
+    cursor: help;
+  }
+  
+  /* ==========================================================================
+     4. 24h Balkendiagramm (Charts)
+     ========================================================================== */
+  .mu-24h-chart {
+    display: grid;
+    grid-template-columns: repeat(24, 1fr);
+    gap: 4px;
+    height: 110px;
+    align-items: flex-end;
+    padding-top: 15px;
+  }
+  
+  .chart-bar-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    justify-content: flex-end;
+    position: relative;
+  }
+  
+  .chart-bar-value-label {
+    font-size: 10px;
+    color: #cbd5e1;
+    margin-bottom: 2px;
+    height: 12px;
+  }
+  
+  .chart-bar-bg {
+    background-color: #141b2b;
+    width: 100%;
+    height: 75px;
+    border-radius: 2px 2px 0 0;
+    display: flex;
+    align-items: flex-end;
+    overflow: hidden;
+  }
+  
+  .chart-bar-fill {
+    width: 100%;
+    height: 0;
+    transition: height 0.4s ease-out;
+  }
+  
+  .chart-bar-fill.buff-fill.has-value {
+    background-color: #6366f1;
+  }
+  
+  .chart-bar-fill.debuff-fill.has-value {
+    background-color: #ef4444;
+  }
+  
+  .chart-bar-hour-label {
+    font-size: 9px;
+    color: #475569;
+    margin-top: 4px;
+  }
+  
+  /* ==========================================================================
+     5. Aggregierte Kapazitäten (Statusbalken)
+     ========================================================================== */
+  .mu-status-bars-column {
+    margin-top: 12px;
+    padding-top: 24px;
+    border-top: 1px solid #1e293b;
+  }
+  
+  .mu-status-bar-wrapper {
+    margin-bottom: 14px;
+  }
+  
+  .mu-status-bar-labels {
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    margin-bottom: 6px;
+  }
+  
+  .mu-status-bar-name {
+    color: #94a3b8;
+    font-weight: 500;
+  }
+  
+  .mu-status-bar-value {
+    color: #f8fafc;
+    font-weight: 500;
+  }
+  
+  .mu-status-bar-bg {
+    background-color: #0b111e;
+    width: 100%;
+    height: 20px;
+    border-radius: 4px;
+    overflow: hidden;
+    position: relative;
+    border: 1px solid #1e293b;
+  }
+  
+  .mu-status-bar-fill {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 8px;
+    transition: width 0.5s ease-in-out;
+    box-sizing: border-box;
+  }
+  
+  .mu-status-bar-fill.fill-overall {
+    background-color: #10b981;
+  }
+  
+  .mu-status-bar-fill.fill-health {
+    background-color: #ef4444;
+  }
+  
+  .mu-status-bar-fill.fill-hunger {
+    background-color: #f59e0b;
+  }
+  
+  .mu-bar-percent-inside {
+    font-size: 11px;
+    font-weight: bold;
+    color: #0f172a;
+  }
+  
+  /* ==========================================================================
+     6. Responsive Screen Anpassungen (Media Queries)
+     ========================================================================== */
+  @media (max-width: 600px) {
+    /* Fallback für mobile Endgeräte */
+    .division-stats-grid {
+      grid-template-columns: repeat(2, 1fr); /* 2 Spalten auf Smartphones */
+      gap: 10px;
+    }
+  }
+  
+  @media (min-width: 850px) {
+    /* Setzt Diagramme im Dashboard auf großen Screens nebeneinander */
+    .division-expanded-details-wrapper {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      align-items: start;
+    }
+    
+    .mu-status-bars-column {
+      grid-column: span 2; /* Die Kapazitätsleisten spannen sich am Boden sauber über die volle Breite */
+    }
+  }

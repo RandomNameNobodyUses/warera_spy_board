@@ -1,0 +1,409 @@
+{
+  "result": {
+    "data": {
+      "dates": {
+        "lastConnectionAt": "2026-06-10T20:15:11.593Z",
+        "lastNotificationsCheckAt": "2025-12-29T22:04:06.329Z",
+        "lastCountryMessageCheckAt": "2025-12-29T22:04:06.329Z",
+        "lastGlobalMessageCheckAt": "2025-12-29T22:04:06.329Z",
+        "lastEventsCheckAt": "2025-12-29T22:04:06.329Z",
+        "lastWorkOfferApplications": [
+          "2026-01-03T00:42:06.515Z",
+          "2026-01-15T20:36:40.486Z",
+          "2026-01-16T15:07:28.911Z"
+        ],
+        "lastWorkAt": "2026-06-10T18:02:53.823Z",
+        "lastDailyRewardClaimedAt": "2026-06-10T00:05:36.492Z",
+        "lastHelpAskedAt": "2026-06-10T14:08:16.769Z",
+        "lastHiresAt": [
+          "2026-01-08T11:50:57.815Z",
+          "2026-01-08T15:11:37.204Z",
+          "2026-01-10T03:28:24.766Z",
+          "2026-01-11T14:07:04.177Z",
+          "2026-01-11T14:07:27.631Z",
+          "2026-01-11T14:08:22.620Z",
+          "2026-01-12T06:00:38.321Z",
+          "2026-01-12T16:10:26.680Z",
+          "2026-01-12T19:06:11.907Z",
+          "2026-01-14T20:47:33.421Z",
+          "2026-01-14T21:04:16.010Z",
+          "2026-01-15T07:55:05.490Z",
+          "2026-01-15T19:43:28.949Z",
+          "2026-01-16T15:55:49.690Z",
+          "2026-01-16T17:33:01.259Z",
+          "2026-01-16T22:58:50.058Z",
+          "2026-01-17T04:15:28.844Z",
+          "2026-01-18T08:00:41.817Z",
+          "2026-01-18T22:46:41.934Z",
+          "2026-01-20T03:55:00.691Z",
+          "2026-01-23T21:45:38.697Z",
+          "2026-01-24T00:02:19.393Z",
+          "2026-01-26T10:45:58.465Z",
+          "2026-01-26T11:35:31.188Z",
+          "2026-01-26T12:20:11.497Z",
+          "2026-01-26T19:23:49.968Z",
+          "2026-01-29T17:39:03.781Z",
+          "2026-02-01T18:21:03.327Z",
+          "2026-02-11T10:24:19.507Z",
+          "2026-02-11T10:34:37.614Z",
+          "2026-02-11T10:46:11.285Z",
+          "2026-02-11T10:46:28.611Z",
+          "2026-02-19T20:25:53.195Z",
+          "2026-02-19T20:27:01.408Z",
+          "2026-02-19T20:27:16.286Z",
+          "2026-02-19T20:27:39.878Z",
+          "2026-02-26T16:11:18.032Z",
+          "2026-03-25T01:34:35.961Z",
+          "2026-04-08T15:56:45.577Z",
+          "2026-04-15T15:40:02.273Z",
+          "2026-05-07T19:14:14.139Z",
+          "2026-05-07T19:33:19.909Z",
+          "2026-05-09T16:11:46.672Z",
+          "2026-05-24T17:14:01.575Z"
+        ],
+        "lastCompanyJoinedAt": "2026-01-16T15:07:28.907Z",
+        "lastSkillsResetAt": "2026-06-05T23:39:58.760Z",
+        "lastFiredFromGovAt": "2026-04-20T20:24:47.912Z"
+      },
+      "infos": {
+        "isPremium": true,
+        "premiumMonthsCount": 2,
+        "premiumGiftsCount": 1,
+        "colorScheme": "amber",
+        "font": "Default",
+        "description": "Je suis un pain aux bananes",
+        "vicePresidentOf": "6813b6d446e731854c7ac79a",
+        "tournamentWonAt": "2026-06-05T21:25:46.477Z",
+        "congressMemberOf": "6813b6d446e731854c7ac79a"
+      },
+      "missions": {
+        "claimedAt": {
+          "starting": "2025-12-30T00:26:08.483Z",
+          "weekly": "2026-06-08T19:08:17.631Z",
+          "daily": "2026-06-10T10:38:54.712Z"
+        },
+        "rerolledDailyMissions": 0,
+        "rerolledWeeklyMissions": 1
+      },
+      "leveling": {
+        "level": 36,
+        "totalXp": 47790,
+        "dailyXpLeft": 100,
+        "availableSkillPoints": 0,
+        "spentSkillPoints": 144,
+        "totalSkillPoints": 144,
+        "freeReset": 0
+      },
+      "preferences": {
+        "autoReplaceOnBreak": true,
+        "appFont": "Saira",
+        "appPattern": "none",
+        "locale": "en",
+        "sfx": false
+      },
+      "discord": {
+        "isVerified": true
+      },
+      "_id": "6952fad6570072bf2733c162",
+      "username": "Doc",
+      "usernameLower": "doc",
+      "avatarUrl": "https://media.warera.io/avatars/6952fad6570072bf2733c162-1781104723490-dmzlvd8k.png",
+      "canOnboard": false,
+      "orgs": [],
+      "country": "6813b6d446e731854c7ac79a",
+      "availableColorSchemes": [],
+      "shouldUpdateProfile": true,
+      "isActive": true,
+      "skills": {
+        "energy": {
+          "level": 0,
+          "currentBarValue": 8,
+          "value": 30,
+          "weapon": null,
+          "equipment": null,
+          "overflow": null,
+          "limited": null,
+          "total": 30,
+          "totalAfterSoftCap": null,
+          "hourlyBarRegen": 3
+        },
+        "health": {
+          "level": 5,
+          "currentBarValue": 15.700000000000054,
+          "value": 150,
+          "weapon": null,
+          "equipment": null,
+          "overflow": null,
+          "limited": null,
+          "total": 150,
+          "totalAfterSoftCap": null,
+          "hourlyBarRegen": 15
+        },
+        "hunger": {
+          "level": 4,
+          "currentBarValue": 1.4000000000000001,
+          "value": 8,
+          "weapon": null,
+          "equipment": null,
+          "overflow": null,
+          "limited": null,
+          "total": 8,
+          "totalAfterSoftCap": null,
+          "hourlyBarRegen": 0.8
+        },
+        "attack": {
+          "level": 7,
+          "tournament": 75,
+          "ammoPercent": 10,
+          "buffsPercent": 60,
+          "debuffsPercent": 0,
+          "militaryRankPercent": 22,
+          "value": 275,
+          "weapon": 106,
+          "equipment": null,
+          "overflow": null,
+          "limited": null,
+          "total": 979,
+          "totalAfterSoftCap": null
+        },
+        "companies": {
+          "level": 4,
+          "value": 6,
+          "weapon": null,
+          "equipment": null,
+          "overflow": null,
+          "limited": null,
+          "total": 6,
+          "totalAfterSoftCap": null
+        },
+        "entrepreneurship": {
+          "level": 0,
+          "currentBarValue": 8,
+          "value": 30,
+          "weapon": null,
+          "equipment": null,
+          "overflow": null,
+          "limited": null,
+          "total": 30,
+          "totalAfterSoftCap": null,
+          "hourlyBarRegen": 3
+        },
+        "production": {
+          "level": 2,
+          "currentBarValue": 19,
+          "value": 16,
+          "weapon": null,
+          "equipment": null,
+          "overflow": null,
+          "limited": null,
+          "total": 16,
+          "totalAfterSoftCap": null,
+          "hourlyBarRegen": 1.6
+        },
+        "criticalChance": {
+          "level": 6,
+          "value": 40,
+          "weapon": 20,
+          "equipment": null,
+          "overflow": null,
+          "limited": null,
+          "total": 60,
+          "totalAfterSoftCap": null
+        },
+        "criticalDamages": {
+          "level": 5,
+          "value": 200,
+          "weapon": null,
+          "equipment": 71,
+          "overflow": null,
+          "limited": null,
+          "total": 271,
+          "totalAfterSoftCap": null
+        },
+        "armor": {
+          "level": 4,
+          "value": 24,
+          "weapon": null,
+          "equipment": 47,
+          "overflow": null,
+          "limited": null,
+          "total": 71,
+          "totalAfterSoftCap": 64
+        },
+        "precision": {
+          "level": 5,
+          "value": 75,
+          "weapon": null,
+          "equipment": 23,
+          "overflow": null,
+          "limited": null,
+          "total": 98,
+          "totalAfterSoftCap": null
+        },
+        "dodge": {
+          "level": 4,
+          "value": 16,
+          "weapon": null,
+          "equipment": 21,
+          "overflow": null,
+          "limited": null,
+          "total": 37,
+          "totalAfterSoftCap": 48
+        },
+        "lootChance": {
+          "level": 3,
+          "value": 11,
+          "weapon": null,
+          "equipment": null,
+          "overflow": null,
+          "limited": null,
+          "total": 11,
+          "totalAfterSoftCap": null
+        },
+        "management": {
+          "level": 1,
+          "value": 6,
+          "weapon": null,
+          "equipment": null,
+          "overflow": null,
+          "limited": null,
+          "total": 6,
+          "totalAfterSoftCap": null
+        }
+      },
+      "emailVerified": true,
+      "militaryRank": 72,
+      "createdAt": "2025-12-29T22:04:06.330Z",
+      "updatedAt": "2026-06-10T20:15:11.593Z",
+      "__v": 2,
+      "stats": {
+        "worksCount": 4805,
+        "damagesCount": 10343355,
+        "estimatedCompanyValues": 8814.529,
+        "estimatedInventoryValue": 542.88,
+        "estimatedWealth": 9548.167,
+        "wealth": {
+          "companies": 19300.466,
+          "items": 2312.841,
+          "money": 370.908,
+          "equipments": 1703.495,
+          "weapons": 849.117,
+          "total": 24536.827
+        },
+        "case1": {
+          "byRarity": {
+            "common": 783,
+            "uncommon": 400,
+            "rare": 98,
+            "epic": 10
+          },
+          "openedCount": 1291
+        },
+        "case2": {
+          "byRarity": {
+            "rare": 13,
+            "epic": 5,
+            "uncommon": 17,
+            "legendary": 2
+          },
+          "openedCount": 37
+        },
+        "gemsPurchased": 600
+      },
+      "finishedTours": {
+        "onboarding": true
+      },
+      "equipment": {
+        "weapon": "6a275a7b48e0cd778cd3ba2e",
+        "ammo": "lightAmmo",
+        "boots": "6a286cc8f10d62d48c7907c5",
+        "chest": "6a299fe6ff5d5ac39a935d0b",
+        "gloves": "6a275c347674519791518423",
+        "helmet": "6a018021dad9c7a7c1b93586",
+        "pants": "6a299fea652d0b6631a5b4f5"
+      },
+      "rankings": {
+        "userDamages": {
+          "value": 10343355,
+          "rank": 2270,
+          "tier": "platinum"
+        },
+        "weeklyUserDamages": {
+          "value": 4498552,
+          "rank": 105,
+          "tier": "master"
+        },
+        "userWealth": {
+          "value": 24536.827,
+          "rank": 1363,
+          "tier": "platinum"
+        },
+        "userLevel": {
+          "value": 47790,
+          "rank": 1169,
+          "tier": "platinum"
+        },
+        "userReferrals": {
+          "value": 7,
+          "rank": 174,
+          "tier": "diamond"
+        },
+        "userSubscribers": {
+          "value": 15,
+          "rank": 429,
+          "tier": "platinum"
+        },
+        "userTerrain": {
+          "value": 8,
+          "rank": 1254,
+          "tier": "gold"
+        },
+        "userPremiumMonths": {
+          "value": 2,
+          "rank": 1261,
+          "tier": "gold"
+        },
+        "userPremiumGifts": {
+          "value": 1,
+          "rank": 247,
+          "tier": "silver"
+        },
+        "userCasesOpened": {
+          "value": 1328,
+          "rank": 1473,
+          "tier": "platinum"
+        },
+        "userGemsPurchased": {
+          "value": 600,
+          "rank": 553,
+          "tier": "bronze"
+        },
+        "userBounty": {
+          "value": 245.92621200000232,
+          "rank": 2851,
+          "tier": "gold"
+        }
+      },
+      "company": "695be7d42c5a585646644f0d",
+      "skillsExpiration": {
+        "attack": {
+          "tournament": "2026-06-12T21:25:03.994Z"
+        }
+      },
+      "muMaxLevelRewarded": 0,
+      "equippedSkinKeys": {
+        "tank": "hamsterTank",
+        "knife": "farmerKnife",
+        "rifle": "1kSubRifle"
+      },
+      "party": "69f41cc8c338f45ff551f7f6",
+      "mu": "69a0d1f9a1f622f46ea9bc96",
+      "buffs": {
+        "buffCodes": [
+          "cocain"
+        ],
+        "buffEndAt": "2026-06-11T01:31:39.457Z"
+      }
+    }
+  }
+}

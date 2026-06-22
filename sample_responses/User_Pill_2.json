@@ -1,0 +1,305 @@
+{
+  "result": {
+    "data": {
+      "dates": {
+        "lastConnectionAt": "2026-06-10T19:25:10.179Z",
+        "lastNotificationsCheckAt": "2026-04-12T06:14:39.952Z",
+        "lastCountryMessageCheckAt": "2026-04-12T06:14:39.952Z",
+        "lastGlobalMessageCheckAt": "2026-04-12T06:14:39.952Z",
+        "lastEventsCheckAt": "2026-04-12T06:14:39.952Z",
+        "lastWorkOfferApplications": [
+          "2026-04-12T06:16:42.742Z",
+          "2026-05-10T11:00:42.708Z",
+          "2026-05-15T19:17:02.982Z"
+        ],
+        "lastHiresAt": [],
+        "lastWorkAt": "2026-06-10T19:26:51.734Z",
+        "lastCompanyJoinedAt": "2026-05-15T19:17:02.980Z",
+        "lastDailyRewardClaimedAt": "2026-06-10T05:14:51.602Z",
+        "lastHelpAskedAt": "2026-06-10T19:25:18.115Z",
+        "lastSkillsResetAt": "2026-05-17T07:02:56.249Z",
+        "lastSeenGovernmentAnnouncementAt": "2026-06-10T16:36:43.600Z"
+      },
+      "missions": {
+        "claimedAt": {
+          "starting": "2026-04-12T16:57:26.016Z",
+          "weekly": "2026-06-08T15:03:46.386Z"
+        },
+        "rerolledWeeklyMissions": 0,
+        "rerolledDailyMissions": 1
+      },
+      "leveling": {
+        "level": 23,
+        "totalXp": 18100,
+        "dailyXpLeft": 100,
+        "availableSkillPoints": 0,
+        "spentSkillPoints": 92,
+        "totalSkillPoints": 92,
+        "freeReset": 0
+      },
+      "preferences": {
+        "autoReplaceOnBreak": true,
+        "appFont": "Saira",
+        "appPattern": "none",
+        "locale": "en",
+        "sfx": true
+      },
+      "_id": "69db384f04d0d6cda3150c0f",
+      "username": "Djkobus",
+      "usernameLower": "djkobus",
+      "canOnboard": false,
+      "country": "6813b6d446e731854c7ac7a0",
+      "availableColorSchemes": [],
+      "shouldUpdateProfile": true,
+      "isActive": true,
+      "skills": {
+        "energy": {
+          "level": 0,
+          "currentBarValue": 4,
+          "value": 30,
+          "weapon": null,
+          "equipment": null,
+          "overflow": null,
+          "limited": null,
+          "total": 30,
+          "totalAfterSoftCap": null,
+          "hourlyBarRegen": 3
+        },
+        "health": {
+          "level": 4,
+          "currentBarValue": 1.2000000000004203,
+          "value": 140,
+          "weapon": null,
+          "equipment": null,
+          "overflow": null,
+          "limited": null,
+          "total": 140,
+          "totalAfterSoftCap": null,
+          "hourlyBarRegen": 14
+        },
+        "hunger": {
+          "level": 4,
+          "currentBarValue": 0.6000000000000003,
+          "value": 8,
+          "weapon": null,
+          "equipment": null,
+          "overflow": null,
+          "limited": null,
+          "total": 8,
+          "totalAfterSoftCap": null,
+          "hourlyBarRegen": 0.8
+        },
+        "attack": {
+          "level": 5,
+          "ammoPercent": 10,
+          "buffsPercent": 60,
+          "debuffsPercent": 0,
+          "militaryRankPercent": 20.5,
+          "value": 225,
+          "weapon": 88,
+          "equipment": null,
+          "overflow": null,
+          "limited": null,
+          "total": 664,
+          "totalAfterSoftCap": null
+        },
+        "companies": {
+          "level": 4,
+          "value": 6,
+          "weapon": null,
+          "equipment": null,
+          "overflow": null,
+          "limited": null,
+          "total": 6,
+          "totalAfterSoftCap": null
+        },
+        "entrepreneurship": {
+          "level": 0,
+          "currentBarValue": 4,
+          "value": 30,
+          "weapon": null,
+          "equipment": null,
+          "overflow": null,
+          "limited": null,
+          "total": 30,
+          "totalAfterSoftCap": null,
+          "hourlyBarRegen": 3
+        },
+        "production": {
+          "level": 0,
+          "currentBarValue": 10,
+          "value": 10,
+          "weapon": null,
+          "equipment": null,
+          "overflow": null,
+          "limited": null,
+          "total": 10,
+          "totalAfterSoftCap": null,
+          "hourlyBarRegen": 1
+        },
+        "criticalChance": {
+          "level": 2,
+          "value": 20,
+          "weapon": 14,
+          "equipment": null,
+          "overflow": null,
+          "limited": null,
+          "total": 34,
+          "totalAfterSoftCap": null
+        },
+        "criticalDamages": {
+          "level": 2,
+          "value": 140,
+          "weapon": null,
+          "equipment": 48,
+          "overflow": null,
+          "limited": null,
+          "total": 188,
+          "totalAfterSoftCap": null
+        },
+        "armor": {
+          "level": 4,
+          "value": 24,
+          "weapon": null,
+          "equipment": 28,
+          "overflow": null,
+          "limited": null,
+          "total": 52,
+          "totalAfterSoftCap": 57
+        },
+        "precision": {
+          "level": 4,
+          "value": 70,
+          "weapon": null,
+          "equipment": 14,
+          "overflow": null,
+          "limited": null,
+          "total": 84,
+          "totalAfterSoftCap": null
+        },
+        "dodge": {
+          "level": 3,
+          "value": 12,
+          "weapon": null,
+          "equipment": 14,
+          "overflow": null,
+          "limited": null,
+          "total": 26,
+          "totalAfterSoftCap": 39
+        },
+        "lootChance": {
+          "level": 5,
+          "value": 15,
+          "weapon": null,
+          "equipment": null,
+          "overflow": null,
+          "limited": null,
+          "total": 15,
+          "totalAfterSoftCap": null
+        },
+        "management": {
+          "level": 0,
+          "value": 4,
+          "weapon": null,
+          "equipment": null,
+          "overflow": null,
+          "limited": null,
+          "total": 4,
+          "totalAfterSoftCap": null
+        }
+      },
+      "emailVerified": false,
+      "militaryRank": 67,
+      "muMaxLevelRewarded": 0,
+      "createdAt": "2026-04-12T06:14:39.953Z",
+      "updatedAt": "2026-06-10T19:26:51.734Z",
+      "__v": 0,
+      "stats": {
+        "worksCount": 1384,
+        "case1": {
+          "byRarity": {
+            "common": 697,
+            "rare": 88,
+            "uncommon": 337,
+            "epic": 10
+          },
+          "openedCount": 1132
+        },
+        "damagesCount": 5921247,
+        "wealth": {
+          "companies": 7217.488,
+          "items": 487.971,
+          "money": 414.635,
+          "equipments": 217.651,
+          "weapons": 243.027,
+          "total": 8580.772
+        }
+      },
+      "equipment": {
+        "helmet": "6a27b5d79cb6a6b9f9e6cf5b",
+        "boots": "6a27b58c6bcaedec5fdbf80d",
+        "gloves": "6a27b5ad48e0cd778cef404c",
+        "weapon": "6a25608c6d1ab0661b697fe2",
+        "chest": "6a27b5c4d11ce3296bb64378",
+        "pants": "6a27b59ae6f492db4add614c",
+        "ammo": "lightAmmo"
+      },
+      "rankings": {
+        "userDamages": {
+          "value": 5905144,
+          "rank": 3400,
+          "tier": "gold"
+        },
+        "weeklyUserDamages": {
+          "value": 907708,
+          "rank": 984,
+          "tier": "platinum"
+        },
+        "userWealth": {
+          "value": 8580.772,
+          "rank": 6912,
+          "tier": "silver"
+        },
+        "userLevel": {
+          "value": 18100,
+          "rank": 6919,
+          "tier": "silver"
+        },
+        "userReferrals": {
+          "value": 0,
+          "rank": 2098,
+          "tier": "platinum"
+        },
+        "userSubscribers": {
+          "value": 1,
+          "rank": 2024,
+          "tier": "bronze"
+        },
+        "userCasesOpened": {
+          "value": 1132,
+          "rank": 1815,
+          "tier": "platinum"
+        },
+        "userBounty": {
+          "value": 112.0329800000005,
+          "rank": 4025,
+          "tier": "gold"
+        }
+      },
+      "avatarUrl": "https://media.warera.io/avatars/69db384f04d0d6cda3150c0f-1776013037921-8swleik8.jpg",
+      "party": "698d0408d2770456e1ca11d0",
+      "equippedSkinKeys": {
+        "helmet": "birthday1YearBetaHelmet"
+      },
+      "company": "69e0c08d57df07a985cb9dc2",
+      "mu": "69a41d7b75b50126c381cca5",
+      "buffs": {
+        "buffCodes": [
+          "cocain"
+        ],
+        "buffEndAt": "2026-06-10T20:01:04.405Z",
+        "debuffWarningNotifiedAt": "2026-06-10T19:01:06.754Z"
+      }
+    }
+  }
+}
