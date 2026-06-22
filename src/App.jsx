@@ -130,15 +130,23 @@ function App() {
             ) : (
               <div className="selected-country-badge">
                 <div className="badge-info">
-                  {/* Lokale SVG-Flagge für das ausgewählte Land geladen */}
-                  {selectedCountry.code && (
-                    <img 
-                      src={`/src/components/flags/${selectedCountry.code.toLowerCase()}.svg`} 
-                      alt="" 
-                      className="country-flag-icon selection-badge-flag"
-                      onError={(e) => e.target.style.display = 'none'}
-                    />
-                  )}
+                  {/* Lokale SVG-Flagge über Vite URL-Zuweisung für das Badge */}
+                  {selectedCountry.code && (() => {
+                    const cleanCode = selectedCountry.code.toLowerCase();
+                    const flagUrl = new URL(`./components/flags/${cleanCode}.svg`, import.meta.url).href;
+                    return (
+                      <img 
+                        src={flagUrl} 
+                        alt="" 
+                        className="country-flag-icon selection-badge-flag"
+                        onError={(e) => {
+                          e.target.onerror = null;
+                          e.target.style.display = 'none';
+                        }}
+                      />
+                    );
+                  })()}
+                  <span className="country-code">[{selectedCountry.code?.toUpperCase()}]</span>
                   <strong className="country-title">{selectedCountry.name}</strong> 
                 </div>
                 <button onClick={handleResetSelection} className="reset-button" title="Auswahl aufheben">✖</button>
