@@ -146,7 +146,6 @@ function App() {
                       />
                     );
                   })()}
-                  <span className="country-code">[{selectedCountry.code?.toUpperCase()}]</span>
                   <strong className="country-title">{selectedCountry.name}</strong> 
                 </div>
                 <button onClick={handleResetSelection} className="reset-button" title="Auswahl aufheben">✖</button>
@@ -157,19 +156,25 @@ function App() {
               <ul className="dropdown-list">
                 {filteredCountries.length > 0 ? (
                   filteredCountries.map((country) => {
-                    const flagCodeLower = country.code?.toLowerCase();
+                    const cleanCode = country.code?.toLowerCase();
 
                     return (
                       <li key={country._id} className="dropdown-item" onClick={() => handleSelectCountry(country)}>
-                        {/* Lokale SVG-Flagge für die Dropdown-Liste geladen */}
-                        {flagCodeLower && (
-                          <img 
-                            src={`/src/components/flags/${flagCodeLower}.svg`} 
-                            alt={`${country.name} Flag`} 
-                            className="country-flag-icon"
-                            onError={(e) => e.target.style.display = 'none'}
-                          />
-                        )}
+                        {/* KORREKTUR: Lokale SVG-Flagge über Vite URL-Zuweisung für das Dropdown */}
+                        {cleanCode && (() => {
+                          const flagUrl = new URL(`./components/flags/${cleanCode}.svg`, import.meta.url).href;
+                          return (
+                            <img 
+                              src={flagUrl} 
+                              alt={`${country.name} Flag`} 
+                              className="country-flag-icon"
+                              onError={(e) => {
+                                e.target.onerror = null;
+                                e.target.style.display = 'none';
+                              }}
+                            />
+                          );
+                        })()}
                         <span className="country-dropdown-name">{country.name}</span>
                       </li>
                     );
