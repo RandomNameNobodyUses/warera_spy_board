@@ -62,13 +62,23 @@ export default function CountryStatsDashboard({ countryStats }) {
   return (
     <div className="stats-dashboard">
       <div className="stats-title-wrapper">
-        {countryStats.flagCode && (
-          <img 
-            src={`/src/components/flags/${countryStats.flagCode.toLowerCase()}.svg`} 
-            alt="" 
-            className="dashboard-heading-flag"
-          />
-        )}
+        {/* Die Flagge wird hier dynamisch über die Vite-URL ermittelt */}
+        {countryStats.flagCode && (() => {
+          const cleanCode = countryStats.flagCode.toLowerCase();
+          const flagUrl = new URL(`./flags/${cleanCode}.svg`, import.meta.url).href;
+          
+          return (
+            <img 
+              src={flagUrl} 
+              alt="" 
+              className="dashboard-heading-flag"
+              onError={(e) => {
+                e.target.onerror = null;
+                e.target.style.display = 'none';
+              }}
+            />
+          );
+        })()}
         <h2>Statistiken für {countryStats.countryName}</h2>
       </div>
       
